@@ -5,4 +5,4 @@ ENV VTIGER_SOURCE http://sources.pinstudio.ru/salesplatform-vtigercrm-6.3.0-2015
 RUN sh script.sh ${VTIGER_SOURCE}
 # WORKDIR /app
 # VOLUME ["logs", "modules", "storage", "test", "user_privileges", "tabdata.php", "parent_tabdata.php", "config.inc.php"]
-VOLUME /app
+VOLUME ["/app","/var/lib/mysql"]
